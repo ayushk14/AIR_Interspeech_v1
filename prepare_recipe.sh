@@ -37,3 +37,7 @@ cp -a Recipe_Files/uttids/test.uttids ~/kaldi/egs/$recipe_name/s5/data/local/dat
 cp -a Recipe_Files/uttids/dev.uttids ~/kaldi/egs/$recipe_name/s5/data/local/data/dev.uttids
 
 echo "New recipe - $recipe_name created successfully with all appropriate files replaced!!!"
+
+cd ~/kaldi/egs/$recipe_name/s5/
+
+./run.sh
