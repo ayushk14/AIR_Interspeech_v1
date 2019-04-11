@@ -29,7 +29,7 @@ numGaussSGMM=9000
 
 feats_nj=10
 train_nj=5
-decode_nj=2
+decode_nj=5
 
 start_date=`date`
 
@@ -40,7 +40,7 @@ echo "                Data & Lexicon & Language Preparation                     
 echo ============================================================================
 
 # Path to AIR Dataset and other preprocessing files
-AIR=~/AIR # @BUT
+AIR=~/AIR_Data_Final # @BUT
 
 # CALL PYTHON SCRIPT AT THIS POINT TO GENERATE THE REQUIRED FILES. THEN PROCEED.
 local_custom/data_prep.sh $AIR
@@ -244,7 +244,7 @@ echo ===========================================================================
 
 local/nnet/run_dnn.sh
 #local/nnet/run_autoencoder.sh : an example, not used to build any system,
-
+COMMENT
 echo ============================================================================
 echo "                    Doing Force Alignment (SGMM2)                         "
 echo ============================================================================
